@@ -18,15 +18,14 @@ composer install
 
 
 npm install
-# или если используешь yarn
-# yarn install
 
-Шаг 3. Создание файла окружения
+
+#Шаг 3. Создание файла окружения
 Скопируй файл .env.example в .env:
 
 cp .env.example .env
 
-Шаг 4. Настройка файла .env
+#Шаг 4. Настройка файла .env
 Отредактируй .env, указав параметры подключения к базе данных.
 
 Пример для базы данных:
@@ -38,30 +37,30 @@ DB_DATABASE=plan_case
 DB_USERNAME=root
 DB_PASSWORD=secret
 
-Шаг 5. Генерация ключа приложения
+#Шаг 5. Генерация ключа приложения
 
 php artisan key:generate
 
-Шаг 6. Запуск миграций и сидеров
+#Шаг 6. Запуск миграций и сидеров
 
 php artisan migrate --seed
 
-Шаг 7. Компиляция ассетов
+#Шаг 7. Компиляция ассетов
 
 npm run dev
 
-Шаг 8. Запуск локального сервера
+#Шаг 8. Запуск локального сервера
 
 php artisan serve
 
 
 http://localhost:8000
 
-Админ 
+#Админ 
 логин : superadmin@superadmin.com
 пароль : superadminsuperadmin
 
-Юзер
+#Юзер
 логин : user@user.com
 пароль : useruser
 
